@@ -37,9 +37,7 @@
         <div
           class="fixed w-screen h-screen z-[-1] bg-cover bg-fixed bg-left sm:bg-center lazy"
           data-src="/src/imgs/02_places/00_goetheanum.jpg"
-          style="
-            background-image: url(/src/imgs/02_places/00_goetheanum_prev.jpg);
-          "
+          style="background-image: url(/src/imgs/02_places/00_goetheanum.jpg)"
         ></div>
         <!-- nav bar -->
         <nav
@@ -63,35 +61,6 @@
               />
             </svg>
           </button>
-
-          <!-- Dropdown menu -->
-          <div id="dropdownDots" class="hidden p-4 z-10 w-full">
-            <ul
-              class="bg-[#F4F4F4] flex flex-col items-center justify-center text-lg py-4"
-              aria-labelledby="dropdownMenuIconButton"
-            >
-              <li>
-                <a class="flex py-4" href="#about">About</a>
-              </li>
-              <!-- <li>
-                <a class="flex py-4" href="#registration">Registration</a>
-              </li> -->
-              <li>
-                <a class="flex py-4" href="#venue&travel">Venue & Travel</a>
-              </li>
-              <li>
-                <a class="flex py-4" href="#organizers">Organizers</a>
-              </li>
-              <li>
-                <a
-                  class="flex py-4"
-                  href="https://forms.gle/RzPSmPGWSxtYfdy4A"
-                  target="_blank"
-                  >Mailing List</a
-                >
-              </li>
-            </ul>
-          </div>
 
           <div class="text-[#F4F4F4] sm:text-[#F4F4F4] text-right sm:text-left">
             5–7 November 2024
@@ -118,6 +87,36 @@
             >
           </div>
         </nav>
+
+        <!-- Dropdown menu -->
+        <div id="dropdownDots" class="hidden p-4 z-10 w-full">
+          <ul
+            class="bg-[#F4F4F4] flex flex-col items-center justify-center text-lg py-4"
+            aria-labelledby="dropdownMenuIconButton"
+          >
+            <li>
+              <a class="flex py-4" href="#about">About</a>
+            </li>
+            <!-- <li>
+                            <a class="flex py-4" href="#registration">Registration</a>
+                          </li> -->
+            <li>
+              <a class="flex py-4" href="#venue&travel">Venue & Travel</a>
+            </li>
+            <li>
+              <a class="flex py-4" href="#organizers">Organizers</a>
+            </li>
+            <li>
+              <a
+                class="flex py-4"
+                href="https://forms.gle/RzPSmPGWSxtYfdy4A"
+                target="_blank"
+                >Mailing List</a
+              >
+            </li>
+          </ul>
+        </div>
+
         <!-- main -->
         <h1 class="relative px-4 sm:px-8 pt-44 text-[#F4F4F4]">
           <div class="text-4xl sm:text-6xl" href="#">
@@ -134,8 +133,8 @@
         <div
           class="mt-auto p-4 sm:p-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 space-x-2 sm:space-x-0 items-center justify-center sm:justify-end"
         >
-          <ul class="flex flex-row space-x-4 items-center">
-            <li class="text-base text-[#F4F4F4]">Sponsored by</li>
+          <div class="flex flex-row space-x-4 items-center">
+            <p class="text-base text-[#F4F4F4]">Sponsored by</p>
             <a
               href="https://www.holcimfoundation.org/"
               target="_blank"
@@ -147,7 +146,7 @@
                 alt="Holcim Foundation Logo"
               />
             </a>
-          </ul>
+          </div>
         </div>
       </div>
     </header>
