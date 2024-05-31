@@ -13,8 +13,8 @@ const observer = new IntersectionObserver((entries) => {
     observer.observe(lazyImage);
   });
   document.addEventListener('DOMContentLoaded', function () {
-    const button = document.getElementById('dropdownMenuIconButton');
-    const dropdown = document.getElementById('dropdownDots');
+    const button = document.getElementById('menuIcon');
+    const dropdown = document.getElementById('menu');
     const dropdownItems = dropdown.querySelectorAll('a');
 
     // Toggle the dropdown menu when the button is clicked

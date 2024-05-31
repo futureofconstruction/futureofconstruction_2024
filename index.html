@@ -44,8 +44,8 @@
           class="flex flex-row gap-y-8 sm:gap-y-8 sm:items-start items-center justify-between p-4 sm:p-8 text-xl"
         >
           <button
-            id="dropdownMenuIconButton"
-            data-dropdown-toggle="dropdownDots"
+            id="menuIcon"
+            data-dropdown-toggle="menu"
             class="sm:hidden flex justify-center p-2 rounded-lg text-sm text-black bg-[#F4F4F4] bg-opacity-75 focus:bg-opacity-100 duration-500"
             type="button"
           >
@@ -61,7 +61,6 @@
               />
             </svg>
           </button>
-
           <div class="text-[#F4F4F4] sm:text-[#F4F4F4] text-right sm:text-left">
             5–7 November 2024
           </div>
@@ -70,9 +69,7 @@
             class="hidden sm:flex flex-col sm:flex-row gap-y-4 sm:gap-x-8 text-[#F4F4F4]"
           >
             <a href="#about" class="hover:text-[#A6A6A6] duration-500">About</a>
-            <!-- <a href="#registration" class="hover:text-[#A6A6A6] duration-500"
-              >Registration</a
-            > -->
+            <!-- <a href="#registration" class="hover:text-[#A6A6A6] duration-500">Registration</a> -->
             <a href="#venue&travel" class="hover:text-[#A6A6A6] duration-500"
               >Venue & Travel</a
             >
@@ -86,36 +83,35 @@
               >Mailing List</a
             >
           </div>
-
-          <!-- Dropdown menu -->
-          <div id="dropdownDots" class="hidden p-4 z-50 w-full">
-            <ul
-              class="bg-[#F4F4F4] flex flex-col items-center justify-center text-lg py-4"
-              aria-labelledby="dropdownMenuIconButton"
-            >
-              <li>
-                <a class="flex py-4" href="#about">About</a>
-              </li>
-              <!-- <li>
-                                <a class="flex py-4" href="#registration">Registration</a>
-                              </li> -->
-              <li>
-                <a class="flex py-4" href="#venue&travel">Venue & Travel</a>
-              </li>
-              <li>
-                <a class="flex py-4" href="#organizers">Organizers</a>
-              </li>
-              <li>
-                <a
-                  class="flex py-4"
-                  href="https://forms.gle/RzPSmPGWSxtYfdy4A"
-                  target="_blank"
-                  >Mailing List</a
-                >
-              </li>
-            </ul>
-          </div>
         </nav>
+        <!-- Dropdown menu -->
+        <div id="menu" class="hidden relative w-full p-4 z-50">
+          <ul
+            class="bg-[#F4F4F4] flex flex-col items-center justify-center text-lg py-4"
+            aria-labelledby="menuIcon"
+          >
+            <li>
+              <a class="flex py-4" href="#about">About</a>
+            </li>
+            <!-- <li>
+                            <a class="flex py-4" href="#registration">Registration</a>
+                          </li> -->
+            <li>
+              <a class="flex py-4" href="#venue&travel">Venue & Travel</a>
+            </li>
+            <li>
+              <a class="flex py-4" href="#organizers">Organizers</a>
+            </li>
+            <li>
+              <a
+                class="flex py-4"
+                href="https://forms.gle/RzPSmPGWSxtYfdy4A"
+                target="_blank"
+                >Mailing List</a
+              >
+            </li>
+          </ul>
+        </div>
         <!-- main -->
         <h1 class="relative px-4 sm:px-8 pt-44 text-[#F4F4F4]">
           <div class="text-4xl sm:text-6xl" href="#">
