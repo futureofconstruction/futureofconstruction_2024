@@ -12,3 +12,11 @@ const observer = new IntersectionObserver((entries) => {
   lazyImages.forEach((lazyImage) => {
     observer.observe(lazyImage);
   });
+  document.addEventListener('DOMContentLoaded', function () {
+    const button = document.getElementById('dropdownMenuIconButton');
+    const dropdown = document.getElementById('dropdownDots');
+
+    button.addEventListener('click', function () {
+        dropdown.classList.toggle('hidden');
+    });
+});
