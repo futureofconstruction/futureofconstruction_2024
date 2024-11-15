@@ -1,1347 +1,2445 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth scrollbar-hide select-none font-roboto">
+  <head>
+    <link rel="canonical" href="https://www.futureofconstruction.net/" />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Future of Construction 2024: Making the Past Productive, November 5–7, 2024, is a symposium in the domain of the Architecture, Engineering, and Construction field, connecting academia, practice, and industry, showcasing the state of the art research and the future of building."
+    />
+    <meta
+      name="author"
+      content="Ena Lloret-Fritschi, Silke Langenberg, Selen Ercan Jenny, Orkun Kasap"
+    />
+    <meta name="designer" content="Dominik Reisach" />
+    <meta
+      name="keywords"
+      content="architecture, engineering, construction, aec, ai, artificial intelligence, robotics, research, design, conference, symposium, future, development"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Future of Construction 2024" />
+    <meta
+      property="og:description"
+      content="Future of Construction 2024: Making the Past Productive, November 5–7, 2024, is a symposium in the domain of the Architecture, Engineering, and Construction field, connecting academia, practice, and industry, showcasing the state of the art research and the future of building."
+    />
+    <meta property="og:image" content="src/imgs/01.jpg" />
+    <meta property="og:url" content="https://www.futureofconstruction.net/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <title>Future of Construction 2024</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/src/imgs/favicon.ico"
+    />
+    <link rel="stylesheet" href="/src/css/styles.css" />
+  </head>
 
-<head>
-  <link rel="canonical" href="https://www.futureofconstruction.net/" />
-  <meta charset="UTF-8" />
-  <meta name="description"
-    content="Future of Construction 2024: Making the Past Productive, November 5–7, 2024, is a symposium in the domain of the Architecture, Engineering, and Construction field, connecting academia, practice, and industry, showcasing the state of the art research and the future of building." />
-  <meta name="author" content="Ena Lloret-Fritschi, Silke Langenberg, Selen Ercan Jenny, Orkun Kasap" />
-  <meta name="designer" content="Dominik Reisach" />
-  <meta name="keywords"
-    content="architecture, engineering, construction, aec, ai, artificial intelligence, robotics, research, design, conference, symposium, future, development" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="Future of Construction 2024" />
-  <meta property="og:description"
-    content="Future of Construction 2024: Making the Past Productive, November 5–7, 2024, is a symposium in the domain of the Architecture, Engineering, and Construction field, connecting academia, practice, and industry, showcasing the state of the art research and the future of building." />
-  <meta property="og:image" content="src/imgs/01.jpg" />
-  <meta property="og:url" content="https://www.futureofconstruction.net/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_US" />
-  <title>Future of Construction 2024</title>
-  <link rel="shortcut icon" type="image/x-icon" href="/src/imgs/favicon.ico" />
-  <link rel="stylesheet" href="/src/css/styles.css" />
-</head>
-
-<body>
-  <header>
-    <div class="flex flex-col min-h-screen">
-      <div class="fixed h-screen w-full z-[-1] bg-cover bg-left md:bg-center bg-no-repeat lazy"
-        data-src=" src/imgs/02_places/00_goetheanum.jpg"
-        style="background-image: url(src/imgs/02_places/00_goetheanum.jpg)"></div>
-      <!-- nav bar -->
-      <nav class="flex flex-row gap-y-8 sm:gap-y-8 sm:items-start items-center justify-between p-4 sm:p-8 text-xl">
-        <button id="menuIcon" data-dropdown-toggle="menu"
-          class="sm:hidden flex justify-center p-2 rounded-lg text-sm text-black bg-[#F4F4F4] bg-opacity-75 focus:bg-opacity-100 duration-500"
-          type="button">
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-            viewBox="0 0 4 15">
-            <path
-              d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
-          </svg>
-        </button>
-        <div class="text-[#F4F4F4] sm:text-[#F4F4F4] text-right sm:text-left">
-          5–7 November 2024
+  <body>
+    <header>
+      <div class="flex flex-col min-h-screen">
+        <div
+          class="fixed h-screen w-full z-[-1] bg-cover bg-left md:bg-center bg-no-repeat lazy"
+          data-src=" src/imgs/02_places/00_goetheanum.jpg"
+          style="background-image: url(src/imgs/02_places/00_goetheanum.jpg)"
+        ></div>
+        <!-- nav bar -->
+        <nav
+          class="flex flex-row gap-y-8 sm:gap-y-8 sm:items-start items-center justify-between p-4 sm:p-8 text-xl"
+        >
+          <button
+            id="menuIcon"
+            data-dropdown-toggle="menu"
+            class="sm:hidden flex justify-center p-2 rounded-lg text-sm text-black bg-[#F4F4F4] bg-opacity-75 focus:bg-opacity-100 duration-500"
+            type="button"
+          >
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 4 15"
+            >
+              <path
+                d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
+              />
+            </svg>
+          </button>
+          <div class="text-[#F4F4F4] sm:text-[#F4F4F4] text-right sm:text-left">
+            5–7 November 2024
+          </div>
+          <div
+            class="hidden sm:flex flex-col sm:flex-row gap-y-4 sm:gap-x-8 text-[#F4F4F4]"
+          >
+            <a href="#impressions" class="hover:text-[#A6A6A6] duration-500"
+              >Impressions</a
+            >
+            <a href="#about" class="hover:text-[#A6A6A6] duration-500">About</a>
+            <a href="#organizers" class="hover:text-[#A6A6A6] duration-500"
+              >Organizers</a
+            >
+            <a href="#keynotes" class="hover:text-[#A6A6A6] duration-500"
+              >Keynotes</a
+            >
+            <a href="#sponsors" class="hover:text-[#A6A6A6] duration-500"
+              >Sponsors</a
+            >
+            <a href="#program" class="hover:text-[#A6A6A6] duration-500"
+              >Program</a
+            >
+            <a href="#workshops" class="hover:text-[#A6A6A6] duration-500"
+              >Workshops</a
+            >
+            <a
+              href="https://forms.gle/RzPSmPGWSxtYfdy4A"
+              target="_blank"
+              class="hover:text-[#A6A6A6] duration-500"
+              >Mailing List</a
+            >
+          </div>
+        </nav>
+        <!-- Dropdown menu -->
+        <div id="menu" class="hidden absolute w-full p-4 pt-16 z-50">
+          <ul
+            class="bg-[#F4F4F4] flex flex-col items-center justify-center text-lg py-4"
+            aria-labelledby="menuIcon"
+          >
+            <li>
+              <a class="flex py-4" href="#impressions">Impressions</a>
+            </li>
+            <li>
+              <a class="flex py-4" href="#about">About</a>
+            </li>
+            <li>
+              <a class="flex py-4" href="#organizers">Organizers</a>
+            </li>
+            <li>
+              <a class="flex py-4" href="#keynotes">Keynotes</a>
+            </li>
+            <li>
+              <a class="flex py-4" href="#sponsors">Sponsors</a>
+            </li>
+            <li>
+              <a class="flex py-4" href="#program">Program</a>
+            </li>
+            <li>
+              <a class="flex py-4" href="#workshops">Workshops</a>
+            </li>
+            <li>
+              <a
+                class="flex py-4"
+                href="https://forms.gle/RzPSmPGWSxtYfdy4A"
+                target="_blank"
+                >Mailing List</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="hidden sm:flex flex-col sm:flex-row gap-y-4 sm:gap-x-8 text-[#F4F4F4]">
-          <a href="#impressions" class="hover:text-[#A6A6A6] duration-500">Impressions</a>
-          <a href="#about" class="hover:text-[#A6A6A6] duration-500">About</a>
-          <a href="#organizers" class="hover:text-[#A6A6A6] duration-500">Organizers</a>
-          <a href="#keynotes" class="hover:text-[#A6A6A6] duration-500">Keynotes</a>
-          <a href="#sponsors" class="hover:text-[#A6A6A6] duration-500">Sponsors</a>
-          <a href="#program" class="hover:text-[#A6A6A6] duration-500">Program</a>
-          <a href="#workshops" class="hover:text-[#A6A6A6] duration-500">Workshops</a>
-          <a href="https://forms.gle/RzPSmPGWSxtYfdy4A" target="_blank"
-            class="hover:text-[#A6A6A6] duration-500">Mailing List</a>
-        </div>
-      </nav>
-      <!-- Dropdown menu -->
-      <div id="menu" class="hidden absolute w-full p-4 pt-16 z-50">
-        <ul class="bg-[#F4F4F4] flex flex-col items-center justify-center text-lg py-4" aria-labelledby="menuIcon">
-          <li>
-            <a class="flex py-4" href="#impressions">Impressions</a>
-          </li>
-          <li>
-            <a class="flex py-4" href="#about">About</a>
-          </li>
-          <li>
-            <a class="flex py-4" href="#organizers">Organizers</a>
-          </li>
-          <li>
-            <a class="flex py-4" href="#keynotes">Keynotes</a>
-          </li>
-          <li>
-            <a class="flex py-4" href="#sponsors">Sponsors</a>
-          </li>
-          <li>
-            <a class="flex py-4" href="#program">Program</a>
-          </li>
-          <li>
-            <a class="flex py-4" href="#workshops">Workshops</a>
-          </li>
-          <li>
-            <a class="flex py-4" href="https://forms.gle/RzPSmPGWSxtYfdy4A" target="_blank">Mailing List</a>
+        <h1 class="px-4 sm:px-8 pt-44 text-[#F4F4F4]">
+          <div class="text-4xl sm:text-6xl" href="#">
+            Making<br />the Past Productive
+          </div>
+          <div class="text-xl sm:text-2xl uppercase text-[#F4F4F4]" href="#">
+            The Future of Construction 2024 Symposium
+          </div>
+          <div class="py-16 text-xl sm:text-2xl" href="#">
+            Accademia di architettura<br />Università della Svizzera italiana,
+            USI
+          </div>
+        </h1>
+      </div>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- Impressions -->
+      <div id="impressions" class="p-4 sm:p-8 flex flex-col w-full">
+        <ul>
+          <li
+            class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500"
+          >
+            <div class="p-4 sm:p-8">
+              <h2
+                class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left"
+              >
+                <p>Impressions FoC 2024</p>
+                <a
+                  href="#"
+                  class="hidden sm:block text-[#A6A6A6] hover:text-black hover:motion-safe:animate-bounce duration-500"
+                  >&uarr;</a
+                >
+              </h2>
+              <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
+              <div
+                class="text-pretty px-4 pb-4 sm:px-0 sm:pb-0 text-sm sm:text-base"
+              >
+                <p class="mb-4">
+                  We would like to thank all participants, contributors, and
+                  sponsors of Future of Construction 2024 Symposium! Your
+                  engagement made the event a true success! <br />
+                  Stay connected and join us for the next FoC Symposium, which
+                  will take place
+                  <span class="font-medium">May 19–23, 2026</span> at ETH
+                  Zürich, hosted by NCCR Digital Fabrication and Design++.
+                </p>
+                <!-- gallery -->
+                <div class="flex justify-center w-full">
+                  <div
+                    id="controls-carousel"
+                    class="relative w-full sm:w-2/3"
+                    data-carousel="slide"
+                  >
+                    <!-- Carousel wrapper -->
+                    <div
+                      class="relative overflow-hidden outline outline-1 w-full aspect-video"
+                    >
+                      <!-- Item 1 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_1.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_1.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 2 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_2.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_2.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 3 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_3.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_3.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 4 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_4.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_4.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 5 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_5.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_5.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 6 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_6.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_6.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 7 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_7.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_7.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 8 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_8.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_8.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 9 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_9.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_9.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 10 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_10.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_10.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 11 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_11.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_11.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 12 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_12.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_12.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 13 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_13.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_13.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 14 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_14.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_14.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 15 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_15.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_15.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 16 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_16.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_16.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 17 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_17.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_17.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 18 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_18.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_18.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 19 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_19.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_19.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 20 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_20.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_20.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 21 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_21.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_21.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 22 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_22.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_22.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 23 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_23.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_23.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 24 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_24.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_24.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 25 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_25.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_25.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 26 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_26.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_26.jpg"
+                          />
+                        </picture>
+                      </div>
+                      <!-- Item 27 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <picture
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        >
+                          <source
+                            srcset="src/imgs/04_impressions/foc2024_27.avif"
+                            type="image/avif"
+                          />
+                          <img
+                            alt="Impressions Foc 2024"
+                            src="src/imgs/04_impressions/foc2024_27.jpg"
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button
+                      type="button"
+                      class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M5 1 1 5l4 4"
+                          />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="m1 9 4-4-4-4"
+                          />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <!-- Gallery -->
+              </div>
+            </div>
           </li>
         </ul>
       </div>
-      <h1 class="px-4 sm:px-8 pt-44 text-[#F4F4F4]">
-        <div class="text-4xl sm:text-6xl" href="#">
-          Making<br />the Past Productive
-        </div>
-        <div class="text-xl sm:text-2xl uppercase text-[#F4F4F4]" href="#">
-          The Future of Construction 2024 Symposium
-        </div>
-        <div class="py-16 text-xl sm:text-2xl" href="#">
-          Accademia di architettura<br />Università della Svizzera italiana,
-          USI
-        </div>
-      </h1>
-    </div>
-  </header>
-  <!-- main -->
-  <main>
-    <!-- Impressions -->
-    <div id="impressions" class="p-4 sm:p-8 flex flex-col w-full">
-      <ul>
-        <li class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500">
-          <div class="p-4 sm:p-8">
-            <h2
-              class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left">
-              <p>Impressions FoC 2024</p>
-              <a href="#"
-                class="hidden sm:block text-[#A6A6A6] hover:text-black hover:motion-safe:animate-bounce duration-500">&uarr;</a>
-            </h2>
-            <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
-            <div class="text-pretty px-4 pb-4 sm:px-0 sm:pb-0 text-sm sm:text-base">
-              <p class="mb-4">
-                We would like to thank all participants, contributors, and
-                sponsors of Future of Construction 2024 Symposium! Your
-                engagement made the event a true success! <br />
-                Stay connected and join us for the next FoC Symposium, which
-                will take place
-                <span class="font-medium">May 19–23, 2026</span> at ETH
-                Zürich, hosted by NCCR Digital Fabrication and Design++.
-              </p>
-              <!-- gallery -->
-              <div class="flex justify-center w-full">
-                <div id="controls-carousel" class="relative w-full sm:w-2/3" data-carousel="slide">
-                  <!-- Carousel wrapper -->
-                  <div class="relative overflow-hidden outline outline-1 w-full aspect-video">
-                    <!-- Item 1 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_1.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_1.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_2.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_2.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_3.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_3.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 4 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_4.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_4.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 5 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item="active">
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_5.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_5.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 6 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_6.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_6.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 7 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_7.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_7.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 8 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_8.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_8.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 9 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_9.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_9.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 10 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_10.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_10.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 11 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_11.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_11.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 12 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_12.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_12.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 13 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_13.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_13.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 14 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_14.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_14.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 15 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_15.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_15.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 16 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_16.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_16.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 17 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_17.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_17.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 18 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_18.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_18.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 19 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_19.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_19.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 20 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_20.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_20.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 21 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_21.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_21.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 22 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_22.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_22.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 23 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_23.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_23.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 24 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_24.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_24.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 25 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_25.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_25.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 26 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_26.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_26.jpg" />
-                      </picture>
-                    </div>
-                    <!-- Item 27 -->
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                      <picture class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                        <source srcset="src/imgs/04_impressions/foc2024_27.avif" type="image/avif" />
-                        <img alt="Impressions Foc 2024" src="src/imgs/04_impressions/foc2024_27.jpg" />
-                      </picture>
-                    </div>
+      <!-- About -->
+      <div id="about" class="p-4 sm:p-8 flex flex-col w-full">
+        <ul>
+          <li
+            class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500"
+          >
+            <div class="p-4 sm:p-8">
+              <h2
+                class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left"
+              >
+                <p>About</p>
+                <a
+                  href="#"
+                  class="hidden sm:block text-[#A6A6A6] hover:text-black hover:motion-safe:animate-bounce duration-500"
+                  >&uarr;</a
+                >
+              </h2>
+              <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
+              <div
+                class="text-pretty px-4 pb-4 sm:px-0 sm:pb-0 text-sm sm:text-base"
+              >
+                <p class="mb-4">
+                  The Future of Construction Symposium series was initiated in
+                  2022 at ETH Zurich, by PhD and Postdoctoral Researchers from
+                  the departments of Architecture, Civil Engineering and
+                  Mechanical Engineering, as a platform to discuss construction
+                  robotics and computational design for sustainable
+                  construction. After a successful kick-off in 2022, it was held
+                  in TU Munich in 2023.
+                </p>
+                <p class="mb-4">
+                  The 2024 edition of the symposium is organized by the
+                  professorship on Fabrication and Material Aware Architecture
+                  at the Università della Svizzera italiana (USI) and the Chair
+                  of Construction Heritage and Preservation at ETH Zurich in
+                  association with NCCR Digital Fabrication and Design++. It
+                  will be themed “Making the Past Productive” and aims to bring
+                  together past innovations and construction approaches and
+                  cutting-edge technological advancements in today’s built
+                  environment.
+                </p>
+                <p class="">
+                  FoC 2024 will take place at the Academy of Architecture in
+                  Mendrisio from November 5 to 7, 2024 and will be held in
+                  person, with participants from academia, start-ups, and the
+                  construction industry, with invited speakers and panelists
+                  from the fields of architecture, civil engineering, digital
+                  fabrication, heritage preservation, real estate,
+                  sustainability, computational design, immersive technologies
+                  and many more. Together, we will discuss the opportunities for
+                  interdisciplinary solutions to urgent and emerging challenges
+                  in construction.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Organizers -->
+      <div id="organizers" class="p-4 sm:p-8 flex flex-col w-full">
+        <ul>
+          <!-- Organizers -->
+          <li
+            class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1"
+          >
+            <div class="p-4 sm:p-8">
+              <h2
+                class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left"
+              >
+                <p>Organizers</p>
+                <a
+                  href="#"
+                  class="hidden sm:block text-[#A6A6A6] hover:text-black hover:motion-safe:animate-bounce duration-500"
+                  >&uarr;</a
+                >
+              </h2>
+              <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
+              <div class="pt-4">
+                <div class="grid grid-cols-1 sm:grid-cols-4 gap-y-8 gap-x-8">
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/lloret-fritschi.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Ena Lloret-Fritschi"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Ena LLoret-Fritschi<br /><span class="text-sm"
+                        >USI Mendrisio</span
+                      >
+                    </p>
                   </div>
-                  <!-- Slider controls -->
-                  <button type="button"
-                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                    data-carousel-prev>
-                    <span
-                      class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M5 1 1 5l4 4" />
-                      </svg>
-                      <span class="sr-only">Previous</span>
-                    </span>
-                  </button>
-                  <button type="button"
-                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                    data-carousel-next>
-                    <span
-                      class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="m1 9 4-4-4-4" />
-                      </svg>
-                      <span class="sr-only">Next</span>
-                    </span>
-                  </button>
-                </div>
-              </div>
-              <!-- Gallery -->
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <!-- About -->
-    <div id="about" class="p-4 sm:p-8 flex flex-col w-full">
-      <ul>
-        <li class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500">
-          <div class="p-4 sm:p-8">
-            <h2
-              class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left">
-              <p>About</p>
-              <a href="#"
-                class="hidden sm:block text-[#A6A6A6] hover:text-black hover:motion-safe:animate-bounce duration-500">&uarr;</a>
-            </h2>
-            <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
-            <div class="text-pretty px-4 pb-4 sm:px-0 sm:pb-0 text-sm sm:text-base">
-              <p class="mb-4">
-                The Future of Construction Symposium series was initiated in
-                2022 at ETH Zurich, by PhD and Postdoctoral Researchers from
-                the departments of Architecture, Civil Engineering and
-                Mechanical Engineering, as a platform to discuss construction
-                robotics and computational design for sustainable
-                construction. After a successful kick-off in 2022, it was held
-                in TU Munich in 2023.
-              </p>
-              <p class="mb-4">
-                The 2024 edition of the symposium is organized by the
-                professorship on Fabrication and Material Aware Architecture
-                at the Università della Svizzera italiana (USI) and the Chair
-                of Construction Heritage and Preservation at ETH Zurich in
-                association with NCCR Digital Fabrication and Design++. It
-                will be themed “Making the Past Productive” and aims to bring
-                together past innovations and construction approaches and
-                cutting-edge technological advancements in today’s built
-                environment.
-              </p>
-              <p class="">
-                FoC 2024 will take place at the Academy of Architecture in
-                Mendrisio from November 5 to 7, 2024 and will be held in
-                person, with participants from academia, start-ups, and the
-                construction industry, with invited speakers and panelists
-                from the fields of architecture, civil engineering, digital
-                fabrication, heritage preservation, real estate,
-                sustainability, computational design, immersive technologies
-                and many more. Together, we will discuss the opportunities for
-                interdisciplinary solutions to urgent and emerging challenges
-                in construction.
-              </p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <!-- Organizers -->
-    <div id="organizers" class="p-4 sm:p-8 flex flex-col w-full">
-      <ul>
-        <!-- Organizers -->
-        <li class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1">
-          <div class="p-4 sm:p-8">
-            <h2
-              class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left">
-              <p>Organizers</p>
-              <a href="#"
-                class="hidden sm:block text-[#A6A6A6] hover:text-black hover:motion-safe:animate-bounce duration-500">&uarr;</a>
-            </h2>
-            <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
-            <div class="pt-4">
-              <div class="grid grid-cols-1 sm:grid-cols-4 gap-y-8 gap-x-8">
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/lloret-fritschi.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Ena Lloret-Fritschi" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Ena LLoret-Fritschi<br /><span class="text-sm">USI Mendrisio</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/langenberg.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Silke Langenberg" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Silke Langenberg<br /><span class="text-sm">ETH Zurich</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/ercan_jenny.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Selen Ercan Jenny" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Selen Ercan Jenny<br /><span class="text-sm">USI Mendrisio</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/kasap.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Orkun Kasap" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Orkun Kasap<br /><span class="text-sm">ETH Zurich</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/mirone.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Francesca Mirone" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Francesca Mirone<br /><span class="text-sm">USI Mendrisio</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/reisach.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Dominik Reisach" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Dominik Reisach<br /><span class="text-sm">ETH Zurich</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/cutajar.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Sacha Cutajar" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Sacha Cutajar<br /><span class="text-sm">USI Mendrisio</span>
-                  </p>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/langenberg.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Silke Langenberg"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Silke Langenberg<br /><span class="text-sm"
+                        >ETH Zurich</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/ercan_jenny.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Selen Ercan Jenny"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Selen Ercan Jenny<br /><span class="text-sm"
+                        >USI Mendrisio</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/kasap.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Orkun Kasap"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Orkun Kasap<br /><span class="text-sm">ETH Zurich</span>
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/mirone.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Francesca Mirone"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Francesca Mirone<br /><span class="text-sm"
+                        >USI Mendrisio</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/reisach.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Dominik Reisach"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Dominik Reisach<br /><span class="text-sm"
+                        >ETH Zurich</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/cutajar.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Sacha Cutajar"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Sacha Cutajar<br /><span class="text-sm"
+                        >USI Mendrisio</span
+                      >
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
-        <!-- Co-Organizers -->
-        <li class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1">
-          <div class="p-4 sm:p-8">
-            <h2
-              class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left">
-              <p>Co-organizers</p>
-            </h2>
-            <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
-            <div class="pt-4">
-              <div class="grid grid-cols-2 sm:grid-cols-4 gap-y-8 gap-x-4 sm:gap-x-8">
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/petzet.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Muck Petzet" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Muck Petzet<br /><span class="text-sm">USI Mendrisio</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/carnevali.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Barbara Carnevali" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Barbara Carnevali<br /><span class="text-sm">USI Mendrisio</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/griego.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Danielle Griego" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Danielle Griego<br /><span class="text-sm">ETH Zurich / Design++</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/savov.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Anton Savov" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Anton Savov<br /><span class="text-sm">ETH Zurich / Design++</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/bickel.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Bernd Bickel" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Bernd Bickel<br /><span class="text-sm">ETH Zurich</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/jenny.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: David Jenny" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    David Jenny<br /><span class="text-sm">ZHAW</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/graser.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Konrad Graser" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Konrad Graser<br /><span class="text-sm">ZHAW</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/parascho.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Stefana Parascho" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Stefana Parascho<br /><span class="text-sm">EPF Lausanne</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/schock.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Brigitta Schock" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Birgitta Schock<br /><span class="text-sm">SIA</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/molo.jpg" class="h-40 w-40 rounded-full outline outline-1"
-                    alt="Portrait: Ludovica Molo" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Ludovica Molo<br /><span class="text-sm">BSA</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/realini.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Andrea Realini" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Andrea Realini<br /><span class="text-sm">Real Capital Management AG</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <!-- Keynotes -->
-    <div id="keynotes" class="p-4 sm:p-8 flex flex-col w-full">
-      <ul>
-        <li class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1">
-          <div class="p-4 sm:p-8">
-            <h2
-              class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left">
-              <p>Keynotes</p>
-              <a href="#"
-                class="hidden sm:block text-[#A6A6A6] hover:text-black hover:motion-safe:animate-bounce duration-500">&uarr;</a>
-            </h2>
-            <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
-            <div class="pt-4">
-              <div class="grid grid-cols-1 sm:grid-cols-4 gap-y-8 gap-x-8">
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/smith.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Stuart Smith" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Stuart Smith<br /><span class="text-sm">ARUP / Holcim Foundation (DE)</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading=" lazy" src="src/imgs/01_people/carpo.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Mario Carpo" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Mario Carpo<br /><span class="text-sm">The Bartlett School of Architecture (UK)</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading=" lazy" src="src/imgs/01_people/boltshauser.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Roger Boltshauser" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Roger Boltshauser<br /><span class="text-sm">Boltshauser Architekten (CH)</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading=" lazy" src="src/imgs/01_people/gigon.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Annette Gigon" />
-                  <p class="mt-4 text-lg sm:text-xl text-center">
-                    Annette Gigon<br /><span class="text-sm">Gigon Guyer Architects (CH)</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <!-- Speakers -->
-        <li class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1">
-          <div class="p-4 sm:p-8">
-            <h2
-              class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left">
-              <p>Speakers</p>
-            </h2>
-            <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
-            <div class="pt-4">
-              <div class="grid grid-cols-2 sm:grid-cols-6 gap-y-8 gap-x-4 sm:gap-x-8">
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/pauli.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Jacqueline Pauli" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Jacqueline Pauli<br /><span class="text-xs sm:text-sm">ZPF Ingenieure / ETH Zurich</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/brenner.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Matthias Brenner" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Matthias Brenner<br /><span class="text-xs sm:text-sm">ETH Zurich</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/suppiger.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Patrick Suppiger" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Patrick Suppiger<br /><span class="text-xs sm:text-sm">BETONSUISSE</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/bischof.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Martina Bischof" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Martina Bischof<br /><span class="text-xs sm:text-sm">RE-WIN</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/ganz.jpg" class="h-40 w-40 rounded-full outline outline-1"
-                    alt="Portrait: Jochen Ganz" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Jochen Ganz<br /><span class="text-xs sm:text-sm">QuadraLigna</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/anton.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Ana Anton" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Ana Anton<br /><span class="text-xs sm:text-sm">ETH Zurich</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/flatt.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Robert Flatt" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Robert Flatt<br /><span class="text-xs sm:text-sm">ETH Zurich</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/elhage.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Hadi El Hage" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Hadi El Hage<br /><span class="text-xs sm:text-sm">European Cultural Centre</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/amicarelli.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Fabio Amicarelli" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Fabio Amicarelli<br /><span class="text-xs sm:text-sm">Foldcast</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/domon.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Cédric Domon" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Cédric Domon<br /><span class="text-xs sm:text-sm">Müller Steinag</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/sounigo.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Eliott Sounigo" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Eliott Sounigo<br /><span class="text-xs sm:text-sm">LAYERED</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/pozzoli.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Viviana Pozzoli" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Viviana Pozzoli<br /><span class="text-xs sm:text-sm">Equipo de Arquitectura</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/ng.jpg" class="h-40 w-40 rounded-full outline outline-1"
-                    alt="Portrait: Tsz Yan Ng" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Tsz Yan Ng<br /><span class="text-xs sm:text-sm">University of Michigan</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/gramazio.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Fabio Gramazio" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Fabio Gramazio<br /><span class="text-xs sm:text-sm">ETH Zurich</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/soto.jpg" class="h-40 w-40 rounded-full outline outline-1"
-                    alt="Portrait: Claudia Eugenin Soto" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Claudia Eugenin Soto<br /><span class="text-xs sm:text-sm">T2CM</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/savov.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Anton Savov" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Anton Savov<br /><span class="text-xs sm:text-sm">ETH Zurich / Design++</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/schock.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Birgitta Schock" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Birgitta Schock<br /><span class="text-xs sm:text-sm">SIA</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/ilmer.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Maik Ilmer" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Maik Ilmer<br /><span class="text-xs sm:text-sm">Ilmer Thies</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/thies.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Felix Thies" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Felix Thies<br /><span class="text-xs sm:text-sm">Ilmer Thies</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/miller.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Quintus Miller" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Quintus Miller<br /><span class="text-xs sm:text-sm">Miller & Maranta / USI</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/woegerbauer.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Clemens Woegerbauer" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Clemens Woegerbauer<br /><span class="text-xs sm:text-sm">Holcim (Schweiz) AG</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/szczesniak.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Kuba Szczesniak" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Kuba Szczesniak<br /><span class="text-xs sm:text-sm">Scandens</span>
-                  </p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <img loading="lazy" src="src/imgs/01_people/reuland.jpg"
-                    class="h-40 w-40 rounded-full outline outline-1" alt="Portrait: Yves Reuland" />
-                  <p class="mt-4 text-sm sm:text-xl text-center">
-                    Yves Reuland<br /><span class="text-xs sm:text-sm">irmos</span>
-                  </p>
+          </li>
+          <!-- Co-Organizers -->
+          <li
+            class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1"
+          >
+            <div class="p-4 sm:p-8">
+              <h2
+                class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left"
+              >
+                <p>Co-organizers</p>
+              </h2>
+              <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
+              <div class="pt-4">
+                <div
+                  class="grid grid-cols-2 sm:grid-cols-4 gap-y-8 gap-x-4 sm:gap-x-8"
+                >
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/petzet.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Muck Petzet"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Muck Petzet<br /><span class="text-sm"
+                        >USI Mendrisio</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/carnevali.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Barbara Carnevali"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Barbara Carnevali<br /><span class="text-sm"
+                        >USI Mendrisio</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/griego.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Danielle Griego"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Danielle Griego<br /><span class="text-sm"
+                        >ETH Zurich / Design++</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/savov.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Anton Savov"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Anton Savov<br /><span class="text-sm"
+                        >ETH Zurich / Design++</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/bickel.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Bernd Bickel"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Bernd Bickel<br /><span class="text-sm">ETH Zurich</span>
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/jenny.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: David Jenny"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      David Jenny<br /><span class="text-sm">ZHAW</span>
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/graser.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Konrad Graser"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Konrad Graser<br /><span class="text-sm">ZHAW</span>
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/parascho.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Stefana Parascho"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Stefana Parascho<br /><span class="text-sm"
+                        >EPF Lausanne</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/schock.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Brigitta Schock"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Birgitta Schock<br /><span class="text-sm">SIA</span>
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/molo.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Ludovica Molo"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Ludovica Molo<br /><span class="text-sm">BSA</span>
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/realini.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Andrea Realini"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Andrea Realini<br /><span class="text-sm"
+                        >Real Capital Management AG</span
+                      >
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <!-- Sponsors -->
-    <div id="sponsors" class="p-4 sm:p-8 flex flex-col w-full">
-      <ul>
-        <!-- Symposium Sponsors -->
-        <li class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1">
-          <div class="p-4 sm:p-8">
-            <h2
-              class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left">
-              <p>Main Sponsors</p>
-              <a href="#"
-                class="hidden sm:block text-[#A6A6A6] hover:text-black hover:motion-safe:animate-bounce duration-500">&uarr;</a>
-            </h2>
-            <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
-            <div class="pt-4">
-              <div class="grid grid-cols-1 sm:grid-cols-4 gap-y-8 gap-x-8 items-center justify-items-center">
-                <a href="https://www.holcimfoundation.org/" target="_blank" class="items-center">
-                  <img loading="lazy" src="src/imgs/00_icons/04_Holcim_b.png" class="h-24"
-                    alt="Holcim Foundation Icon" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <!-- Workshop Sponsors -->
-        <li class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1">
-          <div class="p-4 sm:p-8">
-            <h2 class="block text-2xl sm:text-4xl text-center sm:text-left">
-              Workshop Sponsors
-            </h2>
-            <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
-            <div class="pt-4">
-              <div class="grid grid-cols-1 sm:grid-cols-4 gap-y-8 gap-x-8 items-center justify-items-center">
-                <a href="https://www.ittenbrechbuehl.ch/en/" target="_blank" class="items-center">
-                  <img loading="lazy" src="src/imgs/00_icons/11_IB.png" class="h-24" alt="Itten Brechbuehl Icon" />
-                </a>
-                <a href="https://www.saint-gobain.com/en" target="_blank" class="items-center">
-                  <img loading="lazy" src="src/imgs/00_icons/12_StGobain.png" class="h-24" alt="Saint Gobain Icon" />
-                </a>
-                <a href="https://creabeton.ch/" target="_blank" class="items-center">
-                  <img loading="lazy" src="src/imgs/00_icons/13_creabeton.png" class="h-24" alt="Creabeton Icon" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <!-- Outreach Partners -->
-        <li class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1">
-          <div class="p-4 sm:p-8">
-            <h2 class="block text-2xl sm:text-4xl text-center sm:text-left">
-              Outreach Partners
-            </h2>
-            <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
-            <div class="pt-4">
-              <div class="grid grid-cols-1 sm:grid-cols-4 gap-y-8 gap-x-8 items-center justify-items-center">
-                <a href="https://nnbs.ch/" target="_blank" class="items-center">
-                  <img loading="lazy" src="src/imgs/00_icons/09_NNBS.png" class="h-24" alt="NNBS Icon" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <!-- Outreach Partners -->
-        <li class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500">
-          <div class="p-4 sm:p-8">
-            <h2
-              class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left">
-              <p>Supported By</p>
-            </h2>
-            <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
-            <div class="pt-4">
-              <div class="grid grid-cols-1 sm:grid-cols-4 gap-y-8 gap-x-8 items-center justify-items-center">
-                <a href="https://www.bak.admin.ch/bak/en/home.html" target="_blank" class="items-center">
-                  <img loading="lazy" src="src/imgs/00_icons/10_BAK.png" class="h-24" alt="BAK Icon" />
-                </a>
-                <a href="https://betonsuisse.ch/" target="_blank" class="items-center">
-                  <img loading="lazy" src="src/imgs/00_icons/14_BetonSuisse.png" class="h-24" alt="BetonSuisse Icon" />
-                </a>
-                <a href="https://timespaceexistence.com/" target="_blank" class="items-center">
-                  <img loading="lazy" src="src/imgs/00_icons/15_ECC.png" class="h-24" alt="ECC Icon" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <!-- Program -->
-    <div id="program" class="p-4 sm:p-8 flex flex-col w-full">
-      <div class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500">
-        <div class="p-4 sm:p-8">
-          <h2
-            class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left">
-            <p>Program</p>
-            <a href="#"
-              class="hidden sm:block text-[#A6A6A6] hover:text-black hover:motion-safe:animate-bounce duration-500">&uarr;</a>
-          </h2>
-          <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
-          <div class="text-pretty text-justify px-4 pb-4 sm:px-0 sm:pb-0">
-            <h3 class="mb-4 text-xl sm:text-2xl">
-              <a href="src/pdfs/FoC2024_Program.pdf" target="_blank"
-                class="hover:text-[#A6A6A6] underline duration-500">See the full program here &#8617;</a>
-            </h3>
-            <picture>
-              <source srcset="src/imgs/FoC2024_Program.png" />
-              <img loading="lazy" src="src/imgs/FoC2024_Program.png" class="w-full" alt="..." />
-            </picture>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
-    </div>
-    <!-- Workshops -->
-    <div id="workshops" class="p-4 sm:p-8 flex flex-col w-full">
-      <ul>
-        <li class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1">
-          <div class="p-4 sm:p-8">
-            <h2
-              class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left">
-              <p>Workshops</p>
-              <a href="#"
-                class="hidden sm:block text-[#A6A6A6] hover:text-black hover:motion-safe:animate-bounce duration-500">&uarr;</a>
-            </h2>
-            <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
-            <div class="pt-0">
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-y-8 gap-x-8">
-                <div class="flex flex-col text-center">
-                  <img loading="lazy" src="src/imgs/03_workshops/w01.jpg" class="w-max outline outline-1 lazy"
-                    alt="Future Earth" />
-                  <p class="mt-4 text-lg sm:text-sm">Workshop #01</p>
-                  <a href="src/pdfs/WS1_FutureEarth.pdf" target="_blank"
-                    class="hover:text-[#A6A6A6] underline duration-500 text-xl">Future Earth</a>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">Date</span>: 04.–05. November 2024
-                  </p>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">About</span>: Can we design the
-                    way earthen buildings erode over time using digital
-                    technologies?
-                  </p>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">Workshop lead</span>: Sacha
-                    Cutajar, Ema Krakovska, Joschua Gosslar
-                  </p>
-                </div>
-                <div class="flex flex-col text-center">
-                  <img loading="lazy" src="src/imgs/03_workshops/w02.jpg" class="w-max outline outline-1 lazy"
-                    alt="From Waste to Resource" />
-                  <p class="mt-4 text-lg sm:text-sm">Workshop #02</p>
-                  <a href="src/pdfs/WS2_FromWastetoResource.pdf" target="_blank"
-                    class="hover:text-[#A6A6A6] underline duration-500 text-xl">From Waste to Resource</a>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">Date</span>: 05. November 2024
-                  </p>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">About</span>: Design optimization
-                    and augmented fabrication for the reuse of concrete
-                    cutting waste.
-                  </p>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">Workshop lead</span>: Beril
-                    Önalan, Eleftherios Triantafyllidis, Ioana Mitropoulou
-                  </p>
-                </div>
-                <div class="flex flex-col text-center">
-                  <img loading="lazy" src="src/imgs/03_workshops/w03.jpg" class="w-max outline outline-1 lazy"
-                    alt="Preserving Knowledge & Data in Digital Fabrication" />
-                  <p class="mt-4 text-lg sm:text-sm">Workshop #03</p>
-                  <a href="src/pdfs/WS3_DigitalArchive.pdf" target="_blank"
-                    class="hover:text-[#A6A6A6] underline duration-500 text-xl">Preserving Knowledge & Data in DFAB</a>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">Date</span>: 05. November 2024
-                  </p>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">About</span>: How do we prepare
-                    current construction for future maintenance and repair?
-                  </p>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">Workshop lead</span>: Adrian
-                    Pöllinger, Laurence Crouzet, Rolf Imseng, Li Chen
-                  </p>
-                </div>
-                <div class="flex flex-col text-center">
-                  <img loading="lazy" src="src/imgs/03_workshops/w04.jpg" class="w-max outline outline-1 lazy"
-                    alt="Architecture and AI" />
-                  <p class="mt-4 text-lg sm:text-sm">Workshop #04</p>
-                  <a href="src/pdfs/WS4_ArchitectureAI.pdf" target="_blank"
-                    class="hover:text-[#A6A6A6] underline duration-500 text-xl">Architecture and AI</a>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">Date</span>: 05. November 2024
-                  </p>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">About</span>: How can artificial
-                    intelligence (AI) impact architecture concretely?
-                  </p>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">Workshop lead</span>: Pierre
-                    Chèvremont, Lidor Gilad, Stefano Hu, Andrea Suardi, Elia
-                    Rossi
-                  </p>
-                </div>
-                <div class="flex flex-col text-center">
-                  <img loading="lazy" src="src/imgs/03_workshops/w05.jpg" class="w-max outline outline-1 lazy"
-                    alt="Augmented Carpentry" />
-                  <p class="mt-4 text-lg sm:text-sm">Workshop #05</p>
-                  <a href="src/pdfs/WS5_AugmentedCarpentry.pdf" target="_blank"
-                    class="hover:text-[#A6A6A6] underline duration-500 text-xl">Augmented Carpentry</a>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">Date</span>: 05. November 2024
-                  </p>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">About</span>: How can computer
-                    vision revolutionize traditional woodworking techniques?
-                  </p>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">Workshop lead</span>: Andrea
-                    Settimi
-                  </p>
-                </div>
-                <div class="flex flex-col text-center">
-                  <img loading="lazy" src="src/imgs/03_workshops/w06.jpg" class="w-max outline outline-1 lazy"
-                    alt="Learning from 'Failure'" />
-                  <p class="mt-4 text-lg sm:text-sm">Workshop #06</p>
-                  <a href="src/pdfs/WS6_LearningfromFailure.pdf" target="_blank"
-                    class="hover:text-[#A6A6A6] underline duration-500 text-xl">Learning from 'Failure'</a>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">Date</span>: 05. November 2024
-                  </p>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">About</span>: How can failure
-                    stories in construction be turned into success stories?
-                  </p>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">Workshop lead</span>: Kim Nørgaard
-                    Helmersen
-                  </p>
-                </div>
-                <div class="flex flex-col text-center">
-                  <img loading="lazy" src="src/imgs/03_workshops/w07.jpg" class="w-max outline outline-1 lazy"
-                    alt="Scaling New Materials for Net Zero" />
-                  <p class="mt-4 text-lg sm:text-sm">Workshop #07</p>
-                  <a href="src/pdfs/WS7_ScalingforNetZero.pdf" target="_blank"
-                    class="hover:text-[#A6A6A6] underline duration-500 text-xl">Scaling New Materials for Net Zero</a>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">Date</span>: 05. November 2024
-                  </p>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">About</span>: How can we achieve
-                    net-zero impacts when scaling new construction materials?
-                  </p>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">Workshop lead</span>: Sasha Cisar,
-                    Nabila Pranoto, Thibault Demoulin, Chrissie Muhr, Kika
-                    Brockstedt, Götz Hilber
-                  </p>
-                </div>
-                <div class="flex flex-col text-center">
-                  <img loading="lazy" src="src/imgs/03_workshops/w08.jpg" class="w-max outline outline-1 lazy"
-                    alt="Collaborative Structure" />
-                  <p class="mt-4 text-lg sm:text-sm">Workshop #08</p>
-                  <a href="src/pdfs/WS8_ColaborativeStructure.pdf" target="_blank"
-                    class="hover:text-[#A6A6A6] underline duration-500 text-xl">Collaborative Structure</a>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">Date</span>: 05. November 2024
-                  </p>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">About</span>: Participative
-                    fabrication with recycled timber through digitally
-                    augmented processes.
-                  </p>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">Workshop lead</span>: Yves
-                    Ebnöther, Konrad Graser, Edurne Morales, David Jenny
-                  </p>
-                </div>
-                <div class="flex flex-col text-center">
-                  <img loading="lazy" src="src/imgs/03_workshops/w09.jpg" class="w-max outline outline-1 lazy"
-                    alt="UNDO" />
-                  <p class="mt-4 text-lg sm:text-sm">Workshop #09</p>
-                  <a href="src/pdfs/WS9_UNDO.pdf" target="_blank"
-                    class="hover:text-[#A6A6A6] underline duration-500 text-xl">UNDO</a>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">Date</span>: 05. November 2024
-                  </p>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">About</span>: Human-robot
-                    interaction for real-time design and reconfiguration of
-                    timber structures.
-                  </p>
-                  <p class="text-left mt-4">
-                    <span class="font-bold">Workshop lead</span>: Eleni
-                    Skevaki, Marirena Kladeftira, Ziqi Wang, Jingwen Wang,
-                    Sihui Wu, Stefana Parascho
-                  </p>
+      <!-- Keynotes -->
+      <div id="keynotes" class="p-4 sm:p-8 flex flex-col w-full">
+        <ul>
+          <li
+            class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1"
+          >
+            <div class="p-4 sm:p-8">
+              <h2
+                class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left"
+              >
+                <p>Keynotes</p>
+                <a
+                  href="#"
+                  class="hidden sm:block text-[#A6A6A6] hover:text-black hover:motion-safe:animate-bounce duration-500"
+                  >&uarr;</a
+                >
+              </h2>
+              <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
+              <div class="pt-4">
+                <div class="grid grid-cols-1 sm:grid-cols-4 gap-y-8 gap-x-8">
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/smith.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Stuart Smith"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Stuart Smith<br /><span class="text-sm"
+                        >ARUP / Holcim Foundation (DE)</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading=" lazy"
+                      src="src/imgs/01_people/carpo.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Mario Carpo"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Mario Carpo<br /><span class="text-sm"
+                        >The Bartlett School of Architecture (UK)</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading=" lazy"
+                      src="src/imgs/01_people/boltshauser.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Roger Boltshauser"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Roger Boltshauser<br /><span class="text-sm"
+                        >Boltshauser Architekten (CH)</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading=" lazy"
+                      src="src/imgs/01_people/gigon.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Annette Gigon"
+                    />
+                    <p class="mt-4 text-lg sm:text-xl text-center">
+                      Annette Gigon<br /><span class="text-sm"
+                        >Gigon Guyer Architects (CH)</span
+                      >
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <!-- Venur & Travel -->
-    <div class="p-4 sm:p-8 flex flex-col w-full">
-      <ul>
-        <!-- Venue -->
-        <li class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1">
-          <div class="p-4 sm:p-8">
-            <h2
-              class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left">
-              <p>Venue</p>
-              <a href="#"
-                class="hidden sm:block text-[#A6A6A6] hover:text-black hover:motion-safe:animate-bounce duration-500">&uarr;</a>
-            </h2>
-            <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 items-center px-4 pb-4 sm:px-0 sm:pb-0">
-              <div class="bg-cover py-48 lazy outline outline-1" data-src="/src/imgs/02_places/01_teatro_usi.jpg" style="
-                    background-image: url(/src/imgs/02_places/01_teatro_usi_prev.jpg);
-                  "></div>
-              <p class="text-pretty text-sm sm:text-base">
-                <span class="font-semibold">Accademia di Architettura di Mendrisio</span><br />
-                <a href="https://maps.app.goo.gl/WLRBJAY5HPgDJrFk7" target="_blank"
-                  class="underline hover:text-[#A6A6A6] duration-500">Building: TAM - Teatro dell’Architettura</a><br />
-                Via Alfonso Turconi 25<br />
-                CH 6850 Mendrisio
-              </p>
-            </div>
-          </div>
-        </li>
-        <!-- Travel -->
-        <li class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1">
-          <div class="p-4 sm:p-8">
-            <h2 class="block text-2xl sm:text-4xl text-center sm:text-left">
-              Travel
-            </h2>
-            <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
-            <div class="px-4 pb-4 sm:px-0 sm:pb-0">
-              <p class="mb-4 text-pretty text-justify text-sm sm:text-base">
-                Participants who spend at least
-                <span class="font-medium">one night</span> in Ticino will
-                receive a <span class="font-semibold">Ticino Ticket</span>,
-                offering free travel on all public transport and numerous
-                discounts in the region. For more information see
-                <a href="https://www.ticino.ch/en/ticket.html" target="_blank"><span
-                    class="underline hover:text-[#A6A6A6] duration-500">here</span></a>.
-              </p>
-            </div>
-            <div
-              class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 text-pretty text-justify sm:text-left px-4 pb-4 sm:px-0 sm:pb-0">
-              <div>
-                <h3 class="mb-4 text-xl sm:text-2xl">By train</h3>
-                <div class="mb-4">
-                  <h4 class="font-semibold">Milan &#x2192; Mendrisio</h4>
-                  <p class="text-sm sm:text-base">
-                    Malpensa Airport: S50 Railway TILO Direction
-                    Malpensa-Biasca
-                  </p>
-                  <p class="text-sm sm:text-base">
-                    Milano Central Station: RE80 Railway TILO Direction
-                    Milano-Biasca
-                  </p>
+          </li>
+          <!-- Speakers -->
+          <li
+            class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1"
+          >
+            <div class="p-4 sm:p-8">
+              <h2
+                class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left"
+              >
+                <p>Speakers</p>
+              </h2>
+              <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
+              <div class="pt-4">
+                <div
+                  class="grid grid-cols-2 sm:grid-cols-6 gap-y-8 gap-x-4 sm:gap-x-8"
+                >
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/pauli.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Jacqueline Pauli"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Jacqueline Pauli<br /><span class="text-xs sm:text-sm"
+                        >ZPF Ingenieure / ETH Zurich</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/brenner.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Matthias Brenner"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Matthias Brenner<br /><span class="text-xs sm:text-sm"
+                        >ETH Zurich</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/suppiger.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Patrick Suppiger"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Patrick Suppiger<br /><span class="text-xs sm:text-sm"
+                        >BETONSUISSE</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/bischof.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Martina Bischof"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Martina Bischof<br /><span class="text-xs sm:text-sm"
+                        >RE-WIN</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/ganz.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Jochen Ganz"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Jochen Ganz<br /><span class="text-xs sm:text-sm"
+                        >QuadraLigna</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/anton.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Ana Anton"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Ana Anton<br /><span class="text-xs sm:text-sm"
+                        >ETH Zurich</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/flatt.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Robert Flatt"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Robert Flatt<br /><span class="text-xs sm:text-sm"
+                        >ETH Zurich</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/elhage.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Hadi El Hage"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Hadi El Hage<br /><span class="text-xs sm:text-sm"
+                        >European Cultural Centre</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/amicarelli.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Fabio Amicarelli"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Fabio Amicarelli<br /><span class="text-xs sm:text-sm"
+                        >Foldcast</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/domon.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Cédric Domon"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Cédric Domon<br /><span class="text-xs sm:text-sm"
+                        >Müller Steinag</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/sounigo.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Eliott Sounigo"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Eliott Sounigo<br /><span class="text-xs sm:text-sm"
+                        >LAYERED</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/pozzoli.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Viviana Pozzoli"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Viviana Pozzoli<br /><span class="text-xs sm:text-sm"
+                        >Equipo de Arquitectura</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/ng.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Tsz Yan Ng"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Tsz Yan Ng<br /><span class="text-xs sm:text-sm"
+                        >University of Michigan</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/gramazio.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Fabio Gramazio"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Fabio Gramazio<br /><span class="text-xs sm:text-sm"
+                        >ETH Zurich</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/soto.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Claudia Eugenin Soto"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Claudia Eugenin Soto<br /><span class="text-xs sm:text-sm"
+                        >T2CM</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/savov.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Anton Savov"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Anton Savov<br /><span class="text-xs sm:text-sm"
+                        >ETH Zurich / Design++</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/schock.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Birgitta Schock"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Birgitta Schock<br /><span class="text-xs sm:text-sm"
+                        >SIA</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/ilmer.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Maik Ilmer"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Maik Ilmer<br /><span class="text-xs sm:text-sm"
+                        >Ilmer Thies</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/thies.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Felix Thies"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Felix Thies<br /><span class="text-xs sm:text-sm"
+                        >Ilmer Thies</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/miller.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Quintus Miller"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Quintus Miller<br /><span class="text-xs sm:text-sm"
+                        >Miller & Maranta / USI</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/woegerbauer.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Clemens Woegerbauer"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Clemens Woegerbauer<br /><span class="text-xs sm:text-sm"
+                        >Holcim (Schweiz) AG</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/szczesniak.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Kuba Szczesniak"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Kuba Szczesniak<br /><span class="text-xs sm:text-sm"
+                        >Scandens</span
+                      >
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/01_people/reuland.jpg"
+                      class="h-40 w-40 rounded-full outline outline-1"
+                      alt="Portrait: Yves Reuland"
+                    />
+                    <p class="mt-4 text-sm sm:text-xl text-center">
+                      Yves Reuland<br /><span class="text-xs sm:text-sm"
+                        >irmos</span
+                      >
+                    </p>
+                  </div>
                 </div>
-                <div class="mb-4">
-                  <h4 class="font-semibold">Zurich &#x2192; Mendrisio</h4>
-                  <p class="text-sm sm:text-base">
-                    Zurich HB: EC Railway Direction Zurich-Milano Centrale
-                    &#x2192; Transfer in Lugano <br />&#x2192; S10 Railway
-                    Direction Lugano-Chiasso
-                  </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Sponsors -->
+      <div id="sponsors" class="p-4 sm:p-8 flex flex-col w-full">
+        <ul>
+          <!-- Symposium Sponsors -->
+          <li
+            class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1"
+          >
+            <div class="p-4 sm:p-8">
+              <h2
+                class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left"
+              >
+                <p>Main Sponsors</p>
+                <a
+                  href="#"
+                  class="hidden sm:block text-[#A6A6A6] hover:text-black hover:motion-safe:animate-bounce duration-500"
+                  >&uarr;</a
+                >
+              </h2>
+              <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
+              <div class="pt-4">
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-4 gap-y-8 gap-x-8 items-center justify-items-center"
+                >
+                  <a
+                    href="https://www.holcimfoundation.org/"
+                    target="_blank"
+                    class="items-center"
+                  >
+                    <img
+                      loading="lazy"
+                      src="src/imgs/00_icons/04_Holcim_b.png"
+                      class="h-24"
+                      alt="Holcim Foundation Icon"
+                    />
+                  </a>
                 </div>
               </div>
-              <div>
-                <h3 class="my-2 text-xl sm:text-2xl">By car</h3>
-                <p class="my-4 text-sm sm:text-base">
-                  A2 motorway &#x2192; Mendrisio exit
-                </p>
-                <p class="text-sm sm:text-base">
-                  Parking spaces are available in the parking garage located
-                  on the lower floors of the
-                  <a class="underline hover:text-[#A6A6A6] duration-500"
-                    href="https://maps.app.goo.gl/cW9gfT6cNnJsJDQ4A" target="_blank">Canavee Building</a>, Via Giuseppe
-                  Buffi 5, 6850 Mendrisio.
-                </p>
+            </div>
+          </li>
+          <!-- Workshop Sponsors -->
+          <li
+            class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1"
+          >
+            <div class="p-4 sm:p-8">
+              <h2 class="block text-2xl sm:text-4xl text-center sm:text-left">
+                Workshop Sponsors
+              </h2>
+              <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
+              <div class="pt-4">
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-4 gap-y-8 gap-x-8 items-center justify-items-center"
+                >
+                  <a
+                    href="https://www.ittenbrechbuehl.ch/en/"
+                    target="_blank"
+                    class="items-center"
+                  >
+                    <img
+                      loading="lazy"
+                      src="src/imgs/00_icons/11_IB.png"
+                      class="h-24"
+                      alt="Itten Brechbuehl Icon"
+                    />
+                  </a>
+                  <a
+                    href="https://www.saint-gobain.com/en"
+                    target="_blank"
+                    class="items-center"
+                  >
+                    <img
+                      loading="lazy"
+                      src="src/imgs/00_icons/12_StGobain.png"
+                      class="h-24"
+                      alt="Saint Gobain Icon"
+                    />
+                  </a>
+                  <a
+                    href="https://creabeton.ch/"
+                    target="_blank"
+                    class="items-center"
+                  >
+                    <img
+                      loading="lazy"
+                      src="src/imgs/00_icons/13_creabeton.png"
+                      class="h-24"
+                      alt="Creabeton Icon"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-        <!-- Accommodation -->
-        <li class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1">
-          <div class="p-4 sm:p-8">
-            <h2 class="block text-2xl sm:text-4xl text-center sm:text-left">
-              Accommodation
-            </h2>
-            <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
-            <div class="flex flex-col justify-between px-4 pb-4 sm:px-0 sm:pb-0">
-              <p class="mb-4 text-pretty text-justify text-sm sm:text-base">
-                Please book your accommodation on the official hotel website
-                or via email, specifying the event
-                <span class="font-semibold">Future of Construction 2024</span>
-                or entering the code
-                <span class="font-semibold">FOC2024</span> when making your
-                reservation to access a special discount. Even if the hotels
-                appear fully booked, please contact them since there is a
-                number of rooms reserved for the event.
-              </p>
-              <div class="mb-4">
-                <h3 class="my-2 text-xl sm:text-2xl">Mendrisio</h3>
-                <p>
-                  <a href="https://hotel-milano.ch/" target="_blank"><span
-                      class="underline hover:text-[#A6A6A6] duration-500">Hotel Milano***</span></a>
-                </p>
-                <p>
-                  <a href="https://www.hotelcoronado.ch/en/" target="_blank"><span
-                      class="underline hover:text-[#A6A6A6] duration-500">Hotel Coronado****</span></a>
-                </p>
-              </div>
-              <div class="mb-4">
-                <h3 class="my-2 text-xl sm:text-2xl">Meride</h3>
-                <p>
-                  <a href="https://locandasansilvestro.ch/" target="_blank"><span
-                      class="underline hover:text-[#A6A6A6] duration-500">Locanda San Silvestro</span></a>
-                </p>
-              </div>
-              <div>
-                <h3 class="my-2 text-xl sm:text-2xl">Breggia</h3>
-                <p>
-                  <a href="https://www.lacasadeigelsi.ch/" target="_blank"><span
-                      class="underline hover:text-[#A6A6A6] duration-500">Locanda Dei Gelsi</span></a>
-                </p>
+          </li>
+          <!-- Outreach Partners -->
+          <li
+            class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1"
+          >
+            <div class="p-4 sm:p-8">
+              <h2 class="block text-2xl sm:text-4xl text-center sm:text-left">
+                Outreach Partners
+              </h2>
+              <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
+              <div class="pt-4">
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-4 gap-y-8 gap-x-8 items-center justify-items-center"
+                >
+                  <a
+                    href="https://nnbs.ch/"
+                    target="_blank"
+                    class="items-center"
+                  >
+                    <img
+                      loading="lazy"
+                      src="src/imgs/00_icons/09_NNBS.png"
+                      class="h-24"
+                      alt="NNBS Icon"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </main>
-  <!-- footer -->
-  <footer class="bg-[#F4F4F4] mt-8">
-    <div class="mx-auto w-full px-4 sm:px-24 py-4">
-      <div class="sm:flex sm:justify-between justify-center">
-        <div class="hidden sm:flex flex-row gap-x-4 gap-y-4 sm:gap-y-0 items-center">
-          <a href="https://www.arc.usi.ch/en" target="_blank" class="items-center">
-            <img loading="lazy" src="/src/imgs/00_icons/00_USI.png" class="h-8 sm:h-12 sm:mr-2"
-              alt="Università della Svizzera italiana Logo" />
-          </a>
-          <a href="https://arch.ethz.ch/en" target="_blank" class="items-center">
-            <img loading="lazy" src="/src/imgs/00_icons/01_ETHZ.png" class="h-8 sm:h-12 sm:mr-2"
-              alt="ETH Zurich Logo" />
-          </a>
-          <a href="https://dfab.ch/" target="_blank" class="items-center">
-            <img loading="lazy" src="/src/imgs/00_icons/02_DFAB.png" class="h-8 sm:h-12 sm:mr-2" alt="NCCR DFAB Logo" />
-          </a>
-          <a href="https://designplusplus.ethz.ch/" target="_blank" class="items-center">
-            <img loading="lazy" src="/src/imgs/00_icons/03_DPP.png" class="h-8 sm:h-16 sm:mr-2" alt="Design++ Logo" />
-          </a>
-          <a href="https://www.zhaw.ch/en/archcivil/" target="_blank" class="items-center">
-            <img loading="lazy" src="/src/imgs/00_icons/05_ZHAW.png" class="h-8 sm:h-12 sm:mr-2" alt="ZHAW Logo" />
-          </a>
-          <a href="https://www.epfl.ch/schools/enac/" target="_blank" class="items-center">
-            <img loading="lazy" src="/src/imgs/00_icons/06_EPFL.png" class="h-8 sm:h-12 sm:mr-2" alt="EPFL Logo" />
-          </a>
-          <a href="https://www.sia.ch/en" target="_blank" class="items-center">
-            <img loading="lazy" src="/src/imgs/00_icons/07_SIA.png" class="h-8 sm:h-12 sm:mr-2" alt="SIA Logo" />
-          </a>
-          <a href="https://www.bsa-fas.ch/en/" target="_blank" class="items-center">
-            <img loading="lazy" src="/src/imgs/00_icons/08_BSA.png" class="h-8 sm:h-12 sm:mr-2" alt="BSA Logo" />
-          </a>
-          <a href="https://www.startup.usi.ch/en" target="_blank" class="items-center">
-            <img loading="lazy" src="/src/imgs/00_icons/09_USISC.png" class="h-8 sm:h-12 sm:mr-2"
-              alt="USI Startup Center Logo" />
-          </a>
-        </div>
-        <div class="sm:hidden grid grid-cols-4 gap-x-4 gap-y-4 items-center justify-items-center">
-          <a href="https://www.arc.usi.ch/en" target="_blank" class="items-center">
-            <img loading="lazy" src="/src/imgs/00_icons/00_USI.png" class="h-8 sm:h-12 sm:mr-2"
-              alt="Università della Svizzera italiana Logo" />
-          </a>
-          <a href="https://arch.ethz.ch/en" target="_blank" class="items-center">
-            <img loading="lazy" src="/src/imgs/00_icons/01_ETHZ.png" class="h-8 sm:h-12 sm:mr-2"
-              alt="ETH Zurich Logo" />
-          </a>
-          <a href="https://dfab.ch/" target="_blank" class="items-center">
-            <img loading="lazy" src="/src/imgs/00_icons/02_DFAB.png" class="h-8 sm:h-12 sm:mr-2" alt="NCCR DFAB Logo" />
-          </a>
-          <a href="https://designplusplus.ethz.ch/" target="_blank" class="items-center">
-            <img loading="lazy" src="/src/imgs/00_icons/03_DPP.png" class="h-8 sm:h-16 sm:mr-2" alt="Design++ Logo" />
-          </a>
-          <a href="https://www.zhaw.ch/en/archcivil/" target="_blank" class="items-center">
-            <img loading="lazy" src="/src/imgs/00_icons/05_ZHAW.png" class="h-8 sm:h-12 sm:mr-2" alt="ZHAW Logo" />
-          </a>
-          <a href="https://www.epfl.ch/schools/enac/" target="_blank" class="items-center">
-            <img loading="lazy" src="/src/imgs/00_icons/06_EPFL.png" class="h-8 sm:h-12 sm:mr-2" alt="EPFL Logo" />
-          </a>
-          <a href="https://www.sia.ch/en" target="_blank" class="items-center">
-            <img loading="lazy" src="/src/imgs/00_icons/07_SIA.png" class="h-8 sm:h-12 sm:mr-2" alt="SIA Logo" />
-          </a>
-          <a href="https://www.bsa-fas.ch/en/" target="_blank" class="items-center">
-            <img loading="lazy" src="/src/imgs/00_icons/08_BSA.png" class="h-8 sm:h-12 sm:mr-2" alt="BSA Logo" />
-          </a>
-          <a href="https://www.startup.usi.ch/en" target="_blank" class="items-center">
-            <img loading="lazy" src="/src/imgs/00_icons/09_USISC.png" class="h-8 sm:h-12 sm:mr-2"
-              alt="USI Startup Center Logo" />
-          </a>
-        </div>
+          </li>
+          <!-- Outreach Partners -->
+          <li
+            class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500"
+          >
+            <div class="p-4 sm:p-8">
+              <h2
+                class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left"
+              >
+                <p>Supported By</p>
+              </h2>
+              <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
+              <div class="pt-4">
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-4 gap-y-8 gap-x-8 items-center justify-items-center"
+                >
+                  <a
+                    href="https://www.bak.admin.ch/bak/en/home.html"
+                    target="_blank"
+                    class="items-center"
+                  >
+                    <img
+                      loading="lazy"
+                      src="src/imgs/00_icons/10_BAK.png"
+                      class="h-24"
+                      alt="BAK Icon"
+                    />
+                  </a>
+                  <a
+                    href="https://betonsuisse.ch/"
+                    target="_blank"
+                    class="items-center"
+                  >
+                    <img
+                      loading="lazy"
+                      src="src/imgs/00_icons/14_BetonSuisse.png"
+                      class="h-24"
+                      alt="BetonSuisse Icon"
+                    />
+                  </a>
+                  <a
+                    href="https://timespaceexistence.com/"
+                    target="_blank"
+                    class="items-center"
+                  >
+                    <img
+                      loading="lazy"
+                      src="src/imgs/00_icons/15_ECC.png"
+                      class="h-24"
+                      alt="ECC Icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Program -->
+      <div id="program" class="p-4 sm:p-8 flex flex-col w-full">
         <div
-          class="flex flex-row sm:flex-col justify-center sm:justify-end text-sm sm:text-base text-center sm:text-right mt-8 sm:mt-0">
-          <h2 class="sm:mb-4 font-semibold uppercase mx-2">Past Symposia</h2>
-          <p class="mx-2 sm:mb-2">
-            <a href="https://2022.futureofconstruction.net/" target="_blank"
-              class="hover:text-[#A6A6A6] duration-500">2022</a>
-          </p>
-          <p class="mx-2 sm:mb-2">
-            <a href="https://2023.futureofconstruction.net/" target="_blank"
-              class="hover:text-[#A6A6A6] duration-500">2023</a>
-          </p>
+          class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500"
+        >
+          <div class="p-4 sm:p-8">
+            <h2
+              class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left"
+            >
+              <p>Program</p>
+              <a
+                href="#"
+                class="hidden sm:block text-[#A6A6A6] hover:text-black hover:motion-safe:animate-bounce duration-500"
+                >&uarr;</a
+              >
+            </h2>
+            <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
+            <div class="text-pretty text-justify px-4 pb-4 sm:px-0 sm:pb-0">
+              <h3 class="mb-4 text-xl sm:text-2xl">
+                <a
+                  href="src/pdfs/FoC2024_Program.pdf"
+                  target="_blank"
+                  class="hover:text-[#A6A6A6] underline duration-500"
+                  >See the full program here &#8617;</a
+                >
+              </h3>
+              <picture>
+                <source srcset="src/imgs/FoC2024_Program.png" />
+                <img
+                  loading="lazy"
+                  src="src/imgs/FoC2024_Program.png"
+                  class="w-full"
+                  alt="..."
+                />
+              </picture>
+            </div>
+          </div>
         </div>
       </div>
-      <hr class="my-4 border-[#A6A6A6] sm:mx-auto" />
-      <div class="flex flex-col sm:flex-row justify-center items-center sm:justify-between">
-        <span class="mb-4 text-sm text-[#A6A6A6] text-center">© 2024
-          <a href="https://www.futureofconstruction.net/" target="_blank" class="hover:text-black duration-500">Future
-            of Construction</a>. All Rights Reserved. Background Photo: © Reinicke/<a
-            href="https://www.onarchitecture.de/" target="_blank"
-            class="hover:text-black duration-500">onarchitecture.de</a>.
-        </span>
-        <div class="mb-4 flex sm:justify-center items-center">
-          <span class="text-[#A6A6A6] text-sm">
-            Contact:
-            <a href="mailto:foc2024@ethz.ch" target="_blank" class="hover:text-black duration-500">
-              foc2024@ethz.ch
+      <!-- Workshops -->
+      <div id="workshops" class="p-4 sm:p-8 flex flex-col w-full">
+        <ul>
+          <li
+            class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1"
+          >
+            <div class="p-4 sm:p-8">
+              <h2
+                class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left"
+              >
+                <p>Workshops</p>
+                <a
+                  href="#"
+                  class="hidden sm:block text-[#A6A6A6] hover:text-black hover:motion-safe:animate-bounce duration-500"
+                  >&uarr;</a
+                >
+              </h2>
+              <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
+              <div class="pt-0">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-y-8 gap-x-8">
+                  <div class="flex flex-col text-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/03_workshops/w01.jpg"
+                      class="w-max outline outline-1 lazy"
+                      alt="Future Earth"
+                    />
+                    <p class="mt-4 text-lg sm:text-sm">Workshop #01</p>
+                    <a
+                      href="src/pdfs/WS1_FutureEarth.pdf"
+                      target="_blank"
+                      class="hover:text-[#A6A6A6] underline duration-500 text-xl"
+                      >Future Earth</a
+                    >
+                    <p class="text-left mt-4">
+                      <span class="font-bold">Date</span>: 04.–05. November 2024
+                    </p>
+                    <p class="text-left mt-4">
+                      <span class="font-bold">About</span>: Can we design the
+                      way earthen buildings erode over time using digital
+                      technologies?
+                    </p>
+                    <p class="text-left mt-4">
+                      <span class="font-bold">Workshop lead</span>: Sacha
+                      Cutajar, Ema Krakovska, Joschua Gosslar
+                    </p>
+                  </div>
+                  <div class="flex flex-col text-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/03_workshops/w02.jpg"
+                      class="w-max outline outline-1 lazy"
+                      alt="From Waste to Resource"
+                    />
+                    <p class="mt-4 text-lg sm:text-sm">Workshop #02</p>
+                    <a
+                      href="src/pdfs/WS2_FromWastetoResource.pdf"
+                      target="_blank"
+                      class="hover:text-[#A6A6A6] underline duration-500 text-xl"
+                      >From Waste to Resource</a
+                    >
+                    <p class="text-left mt-4">
+                      <span class="font-bold">Date</span>: 05. November 2024
+                    </p>
+                    <p class="text-left mt-4">
+                      <span class="font-bold">About</span>: Design optimization
+                      and augmented fabrication for the reuse of concrete
+                      cutting waste.
+                    </p>
+                    <p class="text-left mt-4">
+                      <span class="font-bold">Workshop lead</span>: Beril
+                      Önalan, Eleftherios Triantafyllidis, Ioana Mitropoulou
+                    </p>
+                  </div>
+                  <div class="flex flex-col text-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/03_workshops/w03.jpg"
+                      class="w-max outline outline-1 lazy"
+                      alt="Preserving Knowledge & Data in Digital Fabrication"
+                    />
+                    <p class="mt-4 text-lg sm:text-sm">Workshop #03</p>
+                    <a
+                      href="src/pdfs/WS3_DigitalArchive.pdf"
+                      target="_blank"
+                      class="hover:text-[#A6A6A6] underline duration-500 text-xl"
+                      >Preserving Knowledge & Data in DFAB</a
+                    >
+                    <p class="text-left mt-4">
+                      <span class="font-bold">Date</span>: 05. November 2024
+                    </p>
+                    <p class="text-left mt-4">
+                      <span class="font-bold">About</span>: How do we prepare
+                      current construction for future maintenance and repair?
+                    </p>
+                    <p class="text-left mt-4">
+                      <span class="font-bold">Workshop lead</span>: Adrian
+                      Pöllinger, Laurence Crouzet, Rolf Imseng, Li Chen
+                    </p>
+                  </div>
+                  <div class="flex flex-col text-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/03_workshops/w04.jpg"
+                      class="w-max outline outline-1 lazy"
+                      alt="Architecture and AI"
+                    />
+                    <p class="mt-4 text-lg sm:text-sm">Workshop #04</p>
+                    <a
+                      href="src/pdfs/WS4_ArchitectureAI.pdf"
+                      target="_blank"
+                      class="hover:text-[#A6A6A6] underline duration-500 text-xl"
+                      >Architecture and AI</a
+                    >
+                    <p class="text-left mt-4">
+                      <span class="font-bold">Date</span>: 05. November 2024
+                    </p>
+                    <p class="text-left mt-4">
+                      <span class="font-bold">About</span>: How can artificial
+                      intelligence (AI) impact architecture concretely?
+                    </p>
+                    <p class="text-left mt-4">
+                      <span class="font-bold">Workshop lead</span>: Pierre
+                      Chèvremont, Lidor Gilad, Stefano Hu, Andrea Suardi, Elia
+                      Rossi
+                    </p>
+                  </div>
+                  <div class="flex flex-col text-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/03_workshops/w05.jpg"
+                      class="w-max outline outline-1 lazy"
+                      alt="Augmented Carpentry"
+                    />
+                    <p class="mt-4 text-lg sm:text-sm">Workshop #05</p>
+                    <a
+                      href="src/pdfs/WS5_AugmentedCarpentry.pdf"
+                      target="_blank"
+                      class="hover:text-[#A6A6A6] underline duration-500 text-xl"
+                      >Augmented Carpentry</a
+                    >
+                    <p class="text-left mt-4">
+                      <span class="font-bold">Date</span>: 05. November 2024
+                    </p>
+                    <p class="text-left mt-4">
+                      <span class="font-bold">About</span>: How can computer
+                      vision revolutionize traditional woodworking techniques?
+                    </p>
+                    <p class="text-left mt-4">
+                      <span class="font-bold">Workshop lead</span>: Andrea
+                      Settimi
+                    </p>
+                  </div>
+                  <div class="flex flex-col text-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/03_workshops/w06.jpg"
+                      class="w-max outline outline-1 lazy"
+                      alt="Learning from 'Failure'"
+                    />
+                    <p class="mt-4 text-lg sm:text-sm">Workshop #06</p>
+                    <a
+                      href="src/pdfs/WS6_LearningfromFailure.pdf"
+                      target="_blank"
+                      class="hover:text-[#A6A6A6] underline duration-500 text-xl"
+                      >Learning from 'Failure'</a
+                    >
+                    <p class="text-left mt-4">
+                      <span class="font-bold">Date</span>: 05. November 2024
+                    </p>
+                    <p class="text-left mt-4">
+                      <span class="font-bold">About</span>: How can failure
+                      stories in construction be turned into success stories?
+                    </p>
+                    <p class="text-left mt-4">
+                      <span class="font-bold">Workshop lead</span>: Kim Nørgaard
+                      Helmersen
+                    </p>
+                  </div>
+                  <div class="flex flex-col text-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/03_workshops/w07.jpg"
+                      class="w-max outline outline-1 lazy"
+                      alt="Scaling New Materials for Net Zero"
+                    />
+                    <p class="mt-4 text-lg sm:text-sm">Workshop #07</p>
+                    <a
+                      href="src/pdfs/WS7_ScalingforNetZero.pdf"
+                      target="_blank"
+                      class="hover:text-[#A6A6A6] underline duration-500 text-xl"
+                      >Scaling New Materials for Net Zero</a
+                    >
+                    <p class="text-left mt-4">
+                      <span class="font-bold">Date</span>: 05. November 2024
+                    </p>
+                    <p class="text-left mt-4">
+                      <span class="font-bold">About</span>: How can we achieve
+                      net-zero impacts when scaling new construction materials?
+                    </p>
+                    <p class="text-left mt-4">
+                      <span class="font-bold">Workshop lead</span>: Sasha Cisar,
+                      Nabila Pranoto, Thibault Demoulin, Chrissie Muhr, Kika
+                      Brockstedt, Götz Hilber
+                    </p>
+                  </div>
+                  <div class="flex flex-col text-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/03_workshops/w08.jpg"
+                      class="w-max outline outline-1 lazy"
+                      alt="Collaborative Structure"
+                    />
+                    <p class="mt-4 text-lg sm:text-sm">Workshop #08</p>
+                    <a
+                      href="src/pdfs/WS8_ColaborativeStructure.pdf"
+                      target="_blank"
+                      class="hover:text-[#A6A6A6] underline duration-500 text-xl"
+                      >Collaborative Structure</a
+                    >
+                    <p class="text-left mt-4">
+                      <span class="font-bold">Date</span>: 05. November 2024
+                    </p>
+                    <p class="text-left mt-4">
+                      <span class="font-bold">About</span>: Participative
+                      fabrication with recycled timber through digitally
+                      augmented processes.
+                    </p>
+                    <p class="text-left mt-4">
+                      <span class="font-bold">Workshop lead</span>: Yves
+                      Ebnöther, Konrad Graser, Edurne Morales, David Jenny
+                    </p>
+                  </div>
+                  <div class="flex flex-col text-center">
+                    <img
+                      loading="lazy"
+                      src="src/imgs/03_workshops/w09.jpg"
+                      class="w-max outline outline-1 lazy"
+                      alt="UNDO"
+                    />
+                    <p class="mt-4 text-lg sm:text-sm">Workshop #09</p>
+                    <a
+                      href="src/pdfs/WS9_UNDO.pdf"
+                      target="_blank"
+                      class="hover:text-[#A6A6A6] underline duration-500 text-xl"
+                      >UNDO</a
+                    >
+                    <p class="text-left mt-4">
+                      <span class="font-bold">Date</span>: 05. November 2024
+                    </p>
+                    <p class="text-left mt-4">
+                      <span class="font-bold">About</span>: Human-robot
+                      interaction for real-time design and reconfiguration of
+                      timber structures.
+                    </p>
+                    <p class="text-left mt-4">
+                      <span class="font-bold">Workshop lead</span>: Eleni
+                      Skevaki, Marirena Kladeftira, Ziqi Wang, Jingwen Wang,
+                      Sihui Wu, Stefana Parascho
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Venur & Travel -->
+      <div class="p-4 sm:p-8 flex flex-col w-full">
+        <ul>
+          <!-- Venue -->
+          <li
+            class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1"
+          >
+            <div class="p-4 sm:p-8">
+              <h2
+                class="flex flex-row justify-center sm:justify-between text-2xl sm:text-4xl items-center text-center sm:text-left"
+              >
+                <p>Venue</p>
+                <a
+                  href="#"
+                  class="hidden sm:block text-[#A6A6A6] hover:text-black hover:motion-safe:animate-bounce duration-500"
+                  >&uarr;</a
+                >
+              </h2>
+              <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 items-center px-4 pb-4 sm:px-0 sm:pb-0"
+              >
+                <div
+                  class="bg-cover py-48 lazy outline outline-1"
+                  data-src="/src/imgs/02_places/01_teatro_usi.jpg"
+                  style="
+                    background-image: url(/src/imgs/02_places/01_teatro_usi_prev.jpg);
+                  "
+                ></div>
+                <p class="text-pretty text-sm sm:text-base">
+                  <span class="font-semibold"
+                    >Accademia di Architettura di Mendrisio</span
+                  ><br />
+                  <a
+                    href="https://maps.app.goo.gl/WLRBJAY5HPgDJrFk7"
+                    target="_blank"
+                    class="underline hover:text-[#A6A6A6] duration-500"
+                    >Building: TAM - Teatro dell’Architettura</a
+                  ><br />
+                  Via Alfonso Turconi 25<br />
+                  CH 6850 Mendrisio
+                </p>
+              </div>
+            </div>
+          </li>
+          <!-- Travel -->
+          <li
+            class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1"
+          >
+            <div class="p-4 sm:p-8">
+              <h2 class="block text-2xl sm:text-4xl text-center sm:text-left">
+                Travel
+              </h2>
+              <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
+              <div class="px-4 pb-4 sm:px-0 sm:pb-0">
+                <p class="mb-4 text-pretty text-justify text-sm sm:text-base">
+                  Participants who spend at least
+                  <span class="font-medium">one night</span> in Ticino will
+                  receive a <span class="font-semibold">Ticino Ticket</span>,
+                  offering free travel on all public transport and numerous
+                  discounts in the region. For more information see
+                  <a href="https://www.ticino.ch/en/ticket.html" target="_blank"
+                    ><span class="underline hover:text-[#A6A6A6] duration-500"
+                      >here</span
+                    ></a
+                  >.
+                </p>
+              </div>
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 text-pretty text-justify sm:text-left px-4 pb-4 sm:px-0 sm:pb-0"
+              >
+                <div>
+                  <h3 class="mb-4 text-xl sm:text-2xl">By train</h3>
+                  <div class="mb-4">
+                    <h4 class="font-semibold">Milan &#x2192; Mendrisio</h4>
+                    <p class="text-sm sm:text-base">
+                      Malpensa Airport: S50 Railway TILO Direction
+                      Malpensa-Biasca
+                    </p>
+                    <p class="text-sm sm:text-base">
+                      Milano Central Station: RE80 Railway TILO Direction
+                      Milano-Biasca
+                    </p>
+                  </div>
+                  <div class="mb-4">
+                    <h4 class="font-semibold">Zurich &#x2192; Mendrisio</h4>
+                    <p class="text-sm sm:text-base">
+                      Zurich HB: EC Railway Direction Zurich-Milano Centrale
+                      &#x2192; Transfer in Lugano <br />&#x2192; S10 Railway
+                      Direction Lugano-Chiasso
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="my-2 text-xl sm:text-2xl">By car</h3>
+                  <p class="my-4 text-sm sm:text-base">
+                    A2 motorway &#x2192; Mendrisio exit
+                  </p>
+                  <p class="text-sm sm:text-base">
+                    Parking spaces are available in the parking garage located
+                    on the lower floors of the
+                    <a
+                      class="underline hover:text-[#A6A6A6] duration-500"
+                      href="https://maps.app.goo.gl/cW9gfT6cNnJsJDQ4A"
+                      target="_blank"
+                      >Canavee Building</a
+                    >, Via Giuseppe Buffi 5, 6850 Mendrisio.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Accommodation -->
+          <li
+            class="bg-[#F4F4F4] bg-opacity-75 hover:bg-opacity-100 duration-500 mb-1"
+          >
+            <div class="p-4 sm:p-8">
+              <h2 class="block text-2xl sm:text-4xl text-center sm:text-left">
+                Accommodation
+              </h2>
+              <hr class="my-4 mx-4 border-[#A6A6A6] sm:mx-auto" />
+              <div
+                class="flex flex-col justify-between px-4 pb-4 sm:px-0 sm:pb-0"
+              >
+                <p class="mb-4 text-pretty text-justify text-sm sm:text-base">
+                  Please book your accommodation on the official hotel website
+                  or via email, specifying the event
+                  <span class="font-semibold">Future of Construction 2024</span>
+                  or entering the code
+                  <span class="font-semibold">FOC2024</span> when making your
+                  reservation to access a special discount. Even if the hotels
+                  appear fully booked, please contact them since there is a
+                  number of rooms reserved for the event.
+                </p>
+                <div class="mb-4">
+                  <h3 class="my-2 text-xl sm:text-2xl">Mendrisio</h3>
+                  <p>
+                    <a href="https://hotel-milano.ch/" target="_blank"
+                      ><span class="underline hover:text-[#A6A6A6] duration-500"
+                        >Hotel Milano***</span
+                      ></a
+                    >
+                  </p>
+                  <p>
+                    <a href="https://www.hotelcoronado.ch/en/" target="_blank"
+                      ><span class="underline hover:text-[#A6A6A6] duration-500"
+                        >Hotel Coronado****</span
+                      ></a
+                    >
+                  </p>
+                </div>
+                <div class="mb-4">
+                  <h3 class="my-2 text-xl sm:text-2xl">Meride</h3>
+                  <p>
+                    <a href="https://locandasansilvestro.ch/" target="_blank"
+                      ><span class="underline hover:text-[#A6A6A6] duration-500"
+                        >Locanda San Silvestro</span
+                      ></a
+                    >
+                  </p>
+                </div>
+                <div>
+                  <h3 class="my-2 text-xl sm:text-2xl">Breggia</h3>
+                  <p>
+                    <a href="https://www.lacasadeigelsi.ch/" target="_blank"
+                      ><span class="underline hover:text-[#A6A6A6] duration-500"
+                        >Locanda Dei Gelsi</span
+                      ></a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="bg-[#F4F4F4] mt-8">
+      <div class="mx-auto w-full px-4 sm:px-24 py-4">
+        <div class="sm:flex sm:justify-between justify-center">
+          <div
+            class="hidden sm:flex flex-row gap-x-4 gap-y-4 sm:gap-y-0 items-center"
+          >
+            <a
+              href="https://www.arc.usi.ch/en"
+              target="_blank"
+              class="items-center"
+            >
+              <img
+                loading="lazy"
+                src="/src/imgs/00_icons/00_USI.png"
+                class="h-8 sm:h-12 sm:mr-2"
+                alt="Università della Svizzera italiana Logo"
+              />
             </a>
+            <a
+              href="https://arch.ethz.ch/en"
+              target="_blank"
+              class="items-center"
+            >
+              <img
+                loading="lazy"
+                src="/src/imgs/00_icons/01_ETHZ.png"
+                class="h-8 sm:h-12 sm:mr-2"
+                alt="ETH Zurich Logo"
+              />
+            </a>
+            <a href="https://dfab.ch/" target="_blank" class="items-center">
+              <img
+                loading="lazy"
+                src="/src/imgs/00_icons/02_DFAB.png"
+                class="h-8 sm:h-12 sm:mr-2"
+                alt="NCCR DFAB Logo"
+              />
+            </a>
+            <a
+              href="https://designplusplus.ethz.ch/"
+              target="_blank"
+              class="items-center"
+            >
+              <img
+                loading="lazy"
+                src="/src/imgs/00_icons/03_DPP.png"
+                class="h-8 sm:h-16 sm:mr-2"
+                alt="Design++ Logo"
+              />
+            </a>
+            <a
+              href="https://www.zhaw.ch/en/archcivil/"
+              target="_blank"
+              class="items-center"
+            >
+              <img
+                loading="lazy"
+                src="/src/imgs/00_icons/05_ZHAW.png"
+                class="h-8 sm:h-12 sm:mr-2"
+                alt="ZHAW Logo"
+              />
+            </a>
+            <a
+              href="https://www.epfl.ch/schools/enac/"
+              target="_blank"
+              class="items-center"
+            >
+              <img
+                loading="lazy"
+                src="/src/imgs/00_icons/06_EPFL.png"
+                class="h-8 sm:h-12 sm:mr-2"
+                alt="EPFL Logo"
+              />
+            </a>
+            <a
+              href="https://www.sia.ch/en"
+              target="_blank"
+              class="items-center"
+            >
+              <img
+                loading="lazy"
+                src="/src/imgs/00_icons/07_SIA.png"
+                class="h-8 sm:h-12 sm:mr-2"
+                alt="SIA Logo"
+              />
+            </a>
+            <a
+              href="https://www.bsa-fas.ch/en/"
+              target="_blank"
+              class="items-center"
+            >
+              <img
+                loading="lazy"
+                src="/src/imgs/00_icons/08_BSA.png"
+                class="h-8 sm:h-12 sm:mr-2"
+                alt="BSA Logo"
+              />
+            </a>
+            <a
+              href="https://www.startup.usi.ch/en"
+              target="_blank"
+              class="items-center"
+            >
+              <img
+                loading="lazy"
+                src="/src/imgs/00_icons/09_USISC.png"
+                class="h-8 sm:h-12 sm:mr-2"
+                alt="USI Startup Center Logo"
+              />
+            </a>
+          </div>
+          <div
+            class="sm:hidden grid grid-cols-4 gap-x-4 gap-y-4 items-center justify-items-center"
+          >
+            <a
+              href="https://www.arc.usi.ch/en"
+              target="_blank"
+              class="items-center"
+            >
+              <img
+                loading="lazy"
+                src="/src/imgs/00_icons/00_USI.png"
+                class="h-8 sm:h-12 sm:mr-2"
+                alt="Università della Svizzera italiana Logo"
+              />
+            </a>
+            <a
+              href="https://arch.ethz.ch/en"
+              target="_blank"
+              class="items-center"
+            >
+              <img
+                loading="lazy"
+                src="/src/imgs/00_icons/01_ETHZ.png"
+                class="h-8 sm:h-12 sm:mr-2"
+                alt="ETH Zurich Logo"
+              />
+            </a>
+            <a href="https://dfab.ch/" target="_blank" class="items-center">
+              <img
+                loading="lazy"
+                src="/src/imgs/00_icons/02_DFAB.png"
+                class="h-8 sm:h-12 sm:mr-2"
+                alt="NCCR DFAB Logo"
+              />
+            </a>
+            <a
+              href="https://designplusplus.ethz.ch/"
+              target="_blank"
+              class="items-center"
+            >
+              <img
+                loading="lazy"
+                src="/src/imgs/00_icons/03_DPP.png"
+                class="h-8 sm:h-16 sm:mr-2"
+                alt="Design++ Logo"
+              />
+            </a>
+            <a
+              href="https://www.zhaw.ch/en/archcivil/"
+              target="_blank"
+              class="items-center"
+            >
+              <img
+                loading="lazy"
+                src="/src/imgs/00_icons/05_ZHAW.png"
+                class="h-8 sm:h-12 sm:mr-2"
+                alt="ZHAW Logo"
+              />
+            </a>
+            <a
+              href="https://www.epfl.ch/schools/enac/"
+              target="_blank"
+              class="items-center"
+            >
+              <img
+                loading="lazy"
+                src="/src/imgs/00_icons/06_EPFL.png"
+                class="h-8 sm:h-12 sm:mr-2"
+                alt="EPFL Logo"
+              />
+            </a>
+            <a
+              href="https://www.sia.ch/en"
+              target="_blank"
+              class="items-center"
+            >
+              <img
+                loading="lazy"
+                src="/src/imgs/00_icons/07_SIA.png"
+                class="h-8 sm:h-12 sm:mr-2"
+                alt="SIA Logo"
+              />
+            </a>
+            <a
+              href="https://www.bsa-fas.ch/en/"
+              target="_blank"
+              class="items-center"
+            >
+              <img
+                loading="lazy"
+                src="/src/imgs/00_icons/08_BSA.png"
+                class="h-8 sm:h-12 sm:mr-2"
+                alt="BSA Logo"
+              />
+            </a>
+            <a
+              href="https://www.startup.usi.ch/en"
+              target="_blank"
+              class="items-center"
+            >
+              <img
+                loading="lazy"
+                src="/src/imgs/00_icons/09_USISC.png"
+                class="h-8 sm:h-12 sm:mr-2"
+                alt="USI Startup Center Logo"
+              />
+            </a>
+          </div>
+          <div
+            class="flex flex-row sm:flex-col justify-center sm:justify-end text-sm sm:text-base text-center sm:text-right mt-8 sm:mt-0"
+          >
+            <h2 class="sm:mb-4 font-semibold uppercase mx-2">Past Symposia</h2>
+            <p class="mx-2 sm:mb-2">
+              <a
+                href="https://2022.futureofconstruction.net/"
+                target="_blank"
+                class="hover:text-[#A6A6A6] duration-500"
+                >2022</a
+              >
+            </p>
+            <p class="mx-2 sm:mb-2">
+              <a
+                href="https://2023.futureofconstruction.net/"
+                target="_blank"
+                class="hover:text-[#A6A6A6] duration-500"
+                >2023</a
+              >
+            </p>
+          </div>
+        </div>
+        <hr class="my-4 border-[#A6A6A6] sm:mx-auto" />
+        <div
+          class="flex flex-col sm:flex-row justify-center items-center sm:justify-between"
+        >
+          <span class="mb-4 text-sm text-[#A6A6A6] text-center"
+            >© 2024
+            <a
+              href="https://www.futureofconstruction.net/"
+              target="_blank"
+              class="hover:text-black duration-500"
+              >Future of Construction</a
+            >. All Rights Reserved. Background Photo: © Reinicke/<a
+              href="https://www.onarchitecture.de/"
+              target="_blank"
+              class="hover:text-black duration-500"
+              >onarchitecture.de</a
+            >.
           </span>
-          <a href="https://linkedin.com/company/future-of-construction" target="_blank"
-            class="text-[#A6A6A6] hover:text-black ms-8 sm:ms-4 duration-500">
-            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-              viewBox="0 0 448 512">
-              <path fill-rule="evenodd"
-                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
-                clip-rule="evenodd" />
-            </svg>
-            <span class="sr-only">LinkedIn</span>
-          </a>
-          <a href="https://github.com/futureofconstruction" target="_blank"
-            class="text-[#A6A6A6] hover:text-black ms-8 sm:ms-4 duration-500">
-            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-              viewBox="0 0 20 20">
-              <path fill-rule="evenodd"
-                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
-                clip-rule="evenodd" />
-            </svg>
-            <span class="sr-only">GitHub</span>
-          </a>
+          <div class="mb-4 flex sm:justify-center items-center">
+            <span class="text-[#A6A6A6] text-sm">
+              Contact:
+              <a
+                href="mailto:foc2024@ethz.ch"
+                target="_blank"
+                class="hover:text-black duration-500"
+              >
+                foc2024@ethz.ch
+              </a>
+            </span>
+            <a
+              href="https://linkedin.com/company/future-of-construction"
+              target="_blank"
+              class="text-[#A6A6A6] hover:text-black ms-8 sm:ms-4 duration-500"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+            <a
+              href="https://github.com/futureofconstruction"
+              target="_blank"
+              class="text-[#A6A6A6] hover:text-black ms-8 sm:ms-4 duration-500"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">GitHub</span>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- javascript -->
-  <script src="/src/scripts/script.js"></script>
-  <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
-</body>
-
+    </footer>
+    <!-- javascript -->
+    <script src="/src/scripts/script.js"></script>
+    <script src="src/scripts/flowbite.min.js"></script>
+  </body>
 </html>
